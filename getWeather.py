@@ -270,6 +270,7 @@ def createWeatherDataLayer( gp, folder, layerName, weatherData, province, day ):
 			if d[LOW] : newFeature.LOW = d[LOW]
 			if d[POP] : newFeature.POP = d[POP]
 
+
 		dataCursor.InsertRow(newFeature)
 
 	del pointFeature
@@ -279,7 +280,7 @@ def createWeatherDataLayer( gp, folder, layerName, weatherData, province, day ):
 
 
 def main(argv):
-	gp = arcgisscripting.create(9.3)
+	gp = arcgisscripting.create()
 	gp.AddMessage('\n')
 
 	if gp.ParameterCount == 4:
