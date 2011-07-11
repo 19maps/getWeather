@@ -1,4 +1,14 @@
+﻿# This file is used to geocode cities for getWeather.py  
+
+# This approach was taken because on-line geocoders were too slow, some of the names 
+# contain utf-8 unicode characters (which hurt some geocoders), and some of the names
+# simply could not be found such as "English River 21"
+
+# This list will need to be updated if additional cities are added or if the codes change.
+# Updated: 2011 Jul 10
+
 W_ID,NAME,PROV_ID,LAT,LON
+
 caab0001,Acadia Valley,AB,51.157764,-110.214152
 caab0002,Acme,AB,51.497431,-113.506868
 caab0003,Airdrie,AB,51.287806,-114.009612

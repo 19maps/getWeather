@@ -1,56 +1,52 @@
 #!/usr/bin/env python2
-"""WeatherNetwork scraper
+"""WeatherLayer
 
-From WeatherNetwork.com get weather for all cities 
-in a given Canadian province.  Defaults to Ontario.
-Output to STOUT or text file
+From WeatherNetwork.com get weather for all cities in a given
+Canadian province, and create a FeatureClass in the given Workspace.
+All paramenters are manditory
 
-Usage: python getWeather.py [options] [filename]
+Usage: getWeather.py <layerName> <province> <day> <language>
 
-Options:
-  -p XX, --province=XX        province code: 
-                                      AB BC MB NB NL NT NS
-                                      NU ON PE QC SK YT
-  -d X, --day=X               which day: 0 today (default), 1 tomorrow, 
-                                      2 dayafter, 3 dayafter the dayafter
-  -l X, --lang=X          language, E or F
-  -h, --help                  show this help
+Where:
+     <layerName>: path to new FeatureClass (append .shp if necessary)
+     <province>:  official province code:
+                     AB BC MB NB NL NS NT NU ON PE QC SK YT
+     <day>:       day of weather forcast:
+                     'today','tomorrow','tay after tomorrow',
+                     'day after the day after tomorrow'
+     <language>:  language of the weather forcast: english or french
 
-Examples:
-  getWeather.py               get weather for Ontario cities
-                                      output to terminal
-  getWeather.py -p NS         get weather for Nova Scotia cities
-                                      output to terminal
-  getWeather.py -p NS w.txt   get weather for Nova Scotia cities
-                                      output to w.txt
+Example:
+     getWeather.py "C:\\data\\2011jul02.shp" BC today english
 
 """
 
+import os
 import re
 import sys
 import time
 import string
-import getopt
+import arcgisscripting
 import mechanize
 from BeautifulSoup import BeautifulStoneSoup
-#from __future__ import print_function
+from Extras import FeatureClassUtilities
 
 __author__ = "Andrew Ross"
 __copyright__ = "Copyright 2011"
 __license__ = "GPL"
 __version__ = "0.4"
-__email__ = "andrew11@angoor.net"
 __status__ = "Development"
 
 # Source: http://www.canadapost.ca/tools/pg/manual/PGaddress-e.asp#1380608
 PROVINCECODES = ('AB','BC','MB','NB','NL','NT','NS','NU','ON','PE','QC','SK','YT')
 CITYLIST_FILE = 'cityList.csv'
+SPATIALREFERENCE = "Coordinate Systems\Geographic Coordinate Systems\World\WGS 1984.prj"
 
 class wnGeocoder:
 	def __init__(self, province):
 		self.geocoder = {}
 
-		f = open( 'cityList.csv' )
+		f = open( sys.path[0] + os.sep + 'cityList.csv' )
 		for l in f:
 			wID,name,provID,lat,lon = l.strip().split(',')
 			if string.lower( provID ) == province:
@@ -111,31 +107,47 @@ def getCityData( city, language, day ):
 	html = br.response().read()
 	soup = BeautifulStoneSoup(html)
 	description = soup('item')[day].description.text.split(',')
-
-	# digitCharacters = set(string.digits + '-.' )  decimals do no seem to be used in these numbers
-	digitCharacters = set(string.digits + '-' )
-
-	print description
-
 	weather = description[0]
+
 	if day == 0:
-		temperature = float( ''.join( c for c in description[1] if c in digitCharacters ) )
-		humidity = float( ''.join( c for c in description[2] if c in digitCharacters ) )
+		try:
+			temperature = float( ''.join( c for c in description[1] if c in set(string.digits + '-' ) ) )
+		except:
+			temperature = None
+		try:
+			humidity = float( ''.join( c for c in description[2] if c in set(string.digits) ) )
+		except:
+			humidity = None
 		return (weather, temperature, humidity)
 	else:
-		high = float( ''.join( c for c in description[1] if c in digitCharacters ) )
-		low = float( ''.join( c for c in description[2] if c in digitCharacters ) )
-		pop = float( ''.join( c for c in description[3] if c in digitCharacters ) )
+		try:
+			high = float( ''.join( c for c in description[1] if c in set(string.digits + '-') ) )
+		except:
+			high = None
+		try:
+			low = float( ''.join( c for c in description[2] if c in set(string.digits + '-') ) )
+		except:
+			low = None
+		try:
+			pop = float( ''.join( c for c in description[3] if c in set(string.digits ) ) )
+		except:
+			pop = None
 		return (weather, high, low, pop)
 
 
 
-def getWeatherData( province, language, day ):
+def getWeatherData( gp, province, language, day ):
+	gp.AddMessage('Getting cities for ' + string.upper(province))
 	cityList = getCities( province, language )
 	g = wnGeocoder( province )
 	cityData = []
 
+	gp.AddMessage('Getting weather data')
+	cityCount = 0
 	for city in cityList:
+		cityCount += 1
+		if (cityCount % 50) == 0 :
+				gp.AddMessage('  ... ' + str(cityCount) + ' of ' + str(len(cityList.keys())) + ' cities')
 		cityEntry = [city, cityList[city] ]  # cityID, name
 
 		try:
@@ -158,70 +170,90 @@ def outputWeatherData( fileName, weatherData ):
 		sys.stdout = f
 
 	for d in weatherData:
-		# print(*d, sep='\t', file=f)
 		print('\t'.join(map(str,d)))
 
 	if fileName:    # restore stdout
 		sys.stdout = saveStdOut
 		f.close()
 
+def createWeatherDataLayer( gp, folder, layerName, weatherData, province, day ):
+	gp.AddMessage('Creating layer: ' + layerName)
+	gp.workspace = folder
+	fcu = FeatureClassUtilities(gp)
+	_province = string.upper( province )
+
+	if day ==0:  # today's weather includes TEMPERATURE & HUMIDITY
+		ID,NAME,LAT,LON,WEATHER,TEMP,HUMID = range(7)
+		newLayer = fcu.CreateFeatureClass(folder,layerName,fcu.FeatureType.POINT,SPATIALREFERENCE,
+									  [["PROV", fcu.AddFieldTypesEnum.TEXT],
+									   ["NAME", fcu.AddFieldTypesEnum.TEXT],
+									   ["WEATHER", fcu.AddFieldTypesEnum.TEXT],
+									   ["TEMP", fcu.AddFieldTypesEnum.FLOAT],
+									   ["HUMID", fcu.AddFieldTypesEnum.FLOAT],
+									   ["LAT", fcu.AddFieldTypesEnum.FLOAT],
+									   ["LON", fcu.AddFieldTypesEnum.FLOAT]],
+									  True)
+	else:   # tomorrow's weather includes HIGH, LOW & CHANCE OF PRECIPITATION
+		ID,NAME,LAT,LON,WEATHER,HIGH,LOW,POP = range(8)
+		newLayer = fcu.CreateFeatureClass(folder,layerName,fcu.FeatureType.POINT,SPATIALREFERENCE,
+									  [["PROV", fcu.AddFieldTypesEnum.TEXT],
+									   ["NAME", fcu.AddFieldTypesEnum.TEXT],
+									   ["WEATHER", fcu.AddFieldTypesEnum.TEXT],
+									   ["HIGH", fcu.AddFieldTypesEnum.FLOAT],
+									   ["LOW", fcu.AddFieldTypesEnum.FLOAT],
+									   ["POP", fcu.AddFieldTypesEnum.FLOAT],
+									   ["LAT", fcu.AddFieldTypesEnum.FLOAT],
+									   ["LON", fcu.AddFieldTypesEnum.FLOAT]],
+									  True)
+
+	dataCursor = gp.InsertCursor( newLayer )
+	pointFeature = gp.CreateObject("Point")
+	for d in weatherData:
+		newFeature = dataCursor.NewRow()
+		pointFeature.X = d[LON]
+		pointFeature.Y = d[LAT]
+
+		newFeature.shape = pointFeature
+		newFeature.PROV = _province
+		newFeature.NAME = d[NAME]
+		newFeature.WEATHER = d[WEATHER]
+		newFeature.LAT = d[LAT]
+		newFeature.LON = d[LON]
+
+		if day == 0:
+			if d[TEMP] : newFeature.TEMP = d[TEMP]
+			if d[HUMID] : newFeature.HUMID = d[HUMID]
+		else:
+			if d[HIGH] : newFeature.HIGH = d[HIGH]
+			if d[LOW] : newFeature.LOW = d[LOW]
+			if d[POP] : newFeature.POP = d[POP]
+
+		dataCursor.InsertRow(newFeature)
+
+	del pointFeature
+	del newFeature
+	del dataCursor
+
+
 
 def main(argv):
-	try:                                
-		opts, args = getopt.getopt(argv, "hp:l:d:", ["help", "province=","lang=","day="])
-	except getopt.GetoptError:          
-		usage()                         
-		sys.exit(2)                     
+	gp = arcgisscripting.create(9.3)
+	gp.AddMessage('\n')
 
-	province = 'on'
-	language = 'e'
-	day = 0
+	if gp.ParameterCount == 4:
+		folder = os.sep.join( gp.GetParameterAsText(0).split( os.sep )[:-1] )
+		layerName = gp.GetParameterAsText(0).split( os.sep )[-1]
+		province = string.lower( gp.GetParameterAsText(1) )
+		day = {'today':0, 'tomorrow':1, 'day after tomorrow':2,
+			   'day after the day after tomorrow':3}[ string.lower(gp.GetParameterAsText(2)) ]
+		language = string.lower( gp.GetParameterAsText(3)[0] ) 
 
-	for opt, arg in opts:
-		if opt in ("-h", "--help"):
-			usage()
-			sys.exit()
-		elif opt in ("-p", "--province"):
-			if string.upper( arg ) in PROVINCECODES:
-				province = string.lower( arg )
-			else:
-				print "ERROR: Unknown province code - ", arg
-				print "  use --help for list of valid codes\n"
-				sys.exit(2)
-		elif opt in ("-l", "--lang"):
-			if arg in ('e','E','f','F'):
-				language = string.lower( arg )
-			else:
-				print "ERROR: Unknown language code - ", arg
-				print "  use --help for list of valid codes\n"
-				sys.exit(2)
-		elif opt in ("-d", "--day"):
-			try:
-				if 0 <= int(arg) < 4:
-					day = int(arg)
-				else:
-					print "ERROR: Unknown day - ", arg
-					print "  use --help for accepted values\n"
-					sys.exit(2)
-			except:
-				print "ERROR: Unknown day - ", arg
-				print "  use --help for accepted values\n"
-				sys.exit(2)
-				
-			
-
-	if len(args) > 1:
-			print "ERROR: Unknown arguements - ", args[1:]
-			print "  use --help for accepted values\n"
-	elif len(args) == 1:
-			fileName = args[0]
 	else:
-		fileName = None
+		usage()
+		sys.exit(2)
 
-	weatherData = getWeatherData( province, language, day )
-	outputWeatherData( fileName, weatherData )
-
-	sys.exit()
+	weatherData = getWeatherData( gp, province, language, day )
+	createWeatherDataLayer( gp, folder, layerName, weatherData, province, day )
 
 
 
@@ -229,4 +261,4 @@ if __name__ == "__main__":
     main(sys.argv[1:])
 
 
-
+# getWeather.py "C:\Documents and Settings\GIS\Desktop\data" new.shp NU today english
