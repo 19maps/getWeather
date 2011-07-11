@@ -302,5 +302,3 @@ def main(argv):
 if __name__ == "__main__":
     main(sys.argv[1:])
 
-
-# getWeather.py "C:\Documents and Settings\GIS\Desktop\data" new.shp NU today english
