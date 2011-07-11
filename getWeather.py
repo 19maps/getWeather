@@ -1,9 +1,10 @@
 #!/usr/bin/env python2
 """WeatherLayer
 
-From WeatherNetwork.com get weather for all cities in a given
-Canadian province, and create a FeatureClass in the given Workspace.
-All paramenters are manditory
+Create a feature class containing current weather for cities in a given 
+Canadian province.  Features are points with geographic coordinates.  
+Attributes contain temperature, humidity, and chance of precipitation.  
+Weather data obtained from the RSS feeds at www.weathernetwork.com.
 
 Usage: getWeather.py <layerName> <province> <day> <language>
 
