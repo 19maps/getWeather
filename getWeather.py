@@ -9,10 +9,10 @@ Usage: getWeather.py <layerName> <province> <day> <language>
 
 Where:
      <layerName>: path to new FeatureClass (append .shp if necessary)
-     <province>:  official province code:
+     <province>:  province code:
                      AB BC MB NB NL NS NT NU ON PE QC SK YT
      <day>:       day of weather forcast:
-                     'today','tomorrow','tay after tomorrow',
+                     'today','tomorrow','day after tomorrow',
                      'day after the day after tomorrow'
      <language>:  language of the weather forcast: english or french
 
@@ -29,12 +29,10 @@ import string
 import arcgisscripting
 import mechanize
 from BeautifulSoup import BeautifulStoneSoup
-from Extras import FeatureClassUtilities
 
 __author__ = "Andrew Ross"
 __copyright__ = "Copyright 2011"
 __license__ = "GPL"
-__version__ = "0.4"
 __status__ = "Development"
 
 # Source: http://www.canadapost.ca/tools/pg/manual/PGaddress-e.asp#1380608
@@ -42,16 +40,20 @@ PROVINCECODES = ('AB','BC','MB','NB','NL','NT','NS','NU','ON','PE','QC','SK','YT
 CITYLIST_FILE = 'cityList.csv'
 SPATIALREFERENCE = "Coordinate Systems\Geographic Coordinate Systems\World\WGS 1984.prj"
 
+
 class wnGeocoder:
 	def __init__(self, province):
 		self.geocoder = {}
 
-		f = open( sys.path[0] + os.sep + 'cityList.csv' )
+		f = open( sys.path[0] + os.sep + CITYLIST_FILE )
 		for l in f:
-			wID,name,provID,lat,lon = l.strip().split(',')
-			if string.lower( provID ) == province:
-				# self.geocoder[wID] = (float(lat),float(lon))
-				self.geocoder[wID] = (lat,lon)
+			try:  #skip over comments in city file
+				wID,name,provID,lat,lon = l.strip().split(',')
+				if string.lower( provID ) == province:
+					# self.geocoder[wID] = (float(lat),float(lon))
+					self.geocoder[wID] = (lat,lon)
+			except:
+				pass
 		f.close()
 
 	def getCoordinates( self, wid ):
@@ -59,6 +61,46 @@ class wnGeocoder:
 			return self.geocoder[wid]
 		except:
 			return None
+
+class FeatureClassUtilities:
+    '''
+        http://forums.esri.com/Thread.asp?c=93&f=1729&t=301233
+        Author: Andrew C 
+        Date: Feb 24, 2010 
+    '''
+
+    def __init__(self, GP):
+        self.GP = GP
+        
+    class FeatureType:
+        POLYGON = "POLYGON"
+        POLYLINE = "POLYLINE"
+        POINT = "POINT"
+
+    class AddFieldTypesEnum:
+        TEXT = "TEXT"
+        FLOAT = "FLOAT"
+        DOUBLE = "DOUBLE"
+        SHORT = "SHORT"
+        LONG = "LONG"
+        DATE = "DATE"
+        BLOB = "BLOB"
+        RASTER = "RASTER"
+
+    def CreateFeatureClass(self, workspace="in_memory", fileName="temp", FeatureType=FeatureType.POINT, SpatialReference="", Fields=[],overwrite=True):
+        gp = self.GP
+        if gp.exists(workspace + os.sep + fileName) == True and overwrite == True:
+            if gp.overwriteoutput != 1:
+                gp.overwriteoutput = 1
+        elif gp.exists(workspace + os.sep + fileName) == True and overwrite == False:
+            gp.adderror("Feature with name: " + fileName + " alread exists")
+        if SpatialReference == "":
+            gp.AddWarning("No Spatial Reference Was Given")
+        gp.createfeatureclass(workspace, fileName, FeatureType, "","","",SpatialReference)
+        if len(Fields) > 0:
+            for field in Fields:
+                gp.addfield(workspace + os.sep + fileName, field[0], str(field[1]))
+        return workspace + os.sep + fileName
 
 
 def usage():
