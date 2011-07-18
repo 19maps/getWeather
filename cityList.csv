@@ -1,14 +1,4 @@
-ï»¿# This file is used to geocode cities for getWeather.py  
-
-# This approach was taken because on-line geocoders were too slow, some of the names 
-# contain utf-8 unicode characters (which hurt some geocoders), and some of the names
-# simply could not be found such as "English River 21"
-
-# This list will need to be updated if additional cities are added or if the codes change.
-# Updated: 2011 Jul 10
-
 W_ID,NAME,PROV_ID,LAT,LON
-
 caab0001,Acadia Valley,AB,51.157764,-110.214152
 caab0002,Acme,AB,51.497431,-113.506868
 caab0003,Airdrie,AB,51.287806,-114.009612
@@ -54,7 +44,7 @@ caab0042,Brocket,AB,49.551746,-113.75093
 caab0043,Brooks,AB,50.567619,-111.894402
 caab0044,Brownvale,AB,56.123646,-117.890802
 caab0045,Bruderheim,AB,53.8041667,-112.9277778
-caab0764,BrÃ»lÃ©,AB,53.284551,-117.869208
+caab0764,Brûlé,AB,53.284551,-117.869208
 caab0046,Burdett,AB,49.830275,-111.521669
 caab0047,Byemoor,AB,51.978086,-112.290583
 caab0048,Cadomin,AB,53.032472,-117.326529
@@ -193,7 +183,7 @@ caab0179,Keg River,AB,57.788404,-117.855936
 caab0180,Killam,AB,52.7929,-111.853203
 caab0181,Kinuso,AB,55.331791,-115.431396
 caab0182,Kitscoty,AB,53.338091,-110.332526
-caab0183,La CrÃªte,AB,58.187504,-116.40428
+caab0183,La Crête,AB,58.187504,-116.40428
 caab0185,Lac La Biche,AB,54.7702778,-111.9791667
 caab0186,Lacombe,AB,52.46833,-113.736702
 caab0187,Lake Louise,AB,51.4168949,-116.212982
@@ -367,7 +357,7 @@ cabc0017,Atlin,BC,59.578028,-133.689524
 cabc0018,Avola,BC,51.785209,-119.323101
 cabc0019,Balfour,BC,49.62475,-116.962879
 cabc0020,Bamfield,BC,48.833366,-125.142608
-cabc0021,BarriÃ¨re,BC,51.183071,-120.122648
+cabc0021,Barrière,BC,51.183071,-120.122648
 cabc0022,Beach Grove,BC,49.0319239,-123.055374
 cabc0023,Bear Lake,BC,56.195,-126.841301
 cabc0025,Beaver Cove,BC,50.535164,-126.857835
@@ -783,7 +773,7 @@ camb0199,Sprague,MB,49.035457,-95.642988
 camb0205,St-Lazare,MB,50.4488889,-101.3041667
 camb0208,St-Pierre-Jolys,MB,49.4402778,-96.9844444
 camb0201,St. Claude,MB,49.657729,-98.3464709
-camb0202,St. FranÃ§ois Xavier,MB,49.914802,-97.545862
+camb0202,St. François Xavier,MB,49.914802,-97.545862
 camb0328,St. Jean Baptiste,MB,49.266073,-97.342296
 camb0204,St. Laurent,MB,50.4135319,-97.940939
 camb0209,Starbuck,MB,49.768552,-97.618375
@@ -867,7 +857,7 @@ canb0056,Hoyt,NB,45.586405,-66.5531479
 canb0196,Jacquet River,NB,47.917139,-66.008839
 canb0057,Kedgwick,NB,47.6455556,-67.3430556
 canb0058,Keswick,NB,45.994783,-66.827412
-canb0059,LamÃ¨que,NB,47.793459,-64.647975
+canb0059,Lamèque,NB,47.793459,-64.647975
 canb0060,Maces Bay,NB,45.099201,-66.471171
 canb0061,Mcadam,NB,45.59306,-67.325974
 canb0062,Meductic,NB,45.992693,-67.480531
@@ -978,7 +968,7 @@ cans0024,Caribou,NS,45.731112,-62.691877
 cans0025,Carleton,NS,44.00711,-65.927795
 cans0026,Chelsea,NS,44.366667,-64.75
 cans0027,Chester,NS,44.546235,-64.240914
-cans0028,ChÃ©ticamp,NS,46.629544,-61.012962
+cans0028,Chéticamp,NS,46.629544,-61.012962
 cans0029,Cheverie,NS,45.157067,-64.1753109
 cans0031,Clark's Harbour,NS,43.450989,-65.642662
 cans0032,Clarksville,NS,45.100423,-63.831699
@@ -1000,7 +990,7 @@ cans0047,Gabarus,NS,45.8372222,-60.1375
 cans0048,Glace Bay,NS,46.2,-59.967
 cans0049,Goldboro,NS,45.1823849,-61.652361
 cans0050,Goshen,NS,45.377973,-61.97303
-cans0051,Grand Ã‰tang,NS,46.55,-61.033333
+cans0051,Grand Étang,NS,46.55,-61.033333
 cans0053,Grand Narrows,NS,45.95,-60.7833333
 cans0054,Great Village,NS,45.416606,-63.599844
 cans0055,Greenwood,NS,44.971683,-64.93428
@@ -1310,7 +1300,7 @@ caon0178,Delta,ON,44.608157,-76.122598
 caon0179,Denbigh,ON,45.139784,-77.274719
 caon0180,Desbarats,ON,46.344506,-83.922436
 caon0181,Deseronto,ON,44.197476,-77.049563
-caon0183,Deux-RiviÃ¨res,ON,46.252071,-78.286605
+caon0183,Deux-Rivières,ON,46.252071,-78.286605
 caon0184,Devlin,ON,48.61912,-93.672267
 caon0185,Dokis,ON,46.130248,-80.028651
 caon1563,Dokis 9,ON,46.130248,-80.028651
@@ -1642,7 +1632,7 @@ caon0477,Nickel Centre,ON,46.488678,-80.847227
 caon0478,Nipigon,ON,49.018424,-88.255876
 caon0479,Nobel,ON,45.411675,-80.085481
 caon0480,Nobleton,ON,43.902199,-79.6527
-caon0481,NoÃ«lville,ON,46.13369,-80.430763
+caon0481,Noëlville,ON,46.13369,-80.430763
 caon0483,North Augusta,ON,44.761373,-75.738901
 caon0484,North Bay,ON,46.319107,-79.434225
 caon0485,North Gower,ON,45.131504,-75.716223
@@ -1764,7 +1754,7 @@ caon0597,Russell,ON,45.257313,-75.358357
 caon1745,Ruthven,ON,42.053675,-82.67193
 caon1582,Sachigo Lake,ON,53.874096,-92.170359
 caon1756,Salem,ON,43.691248,-80.448756
-caon1746,Sandwich,ON,0,0
+caon1746,Sandwich,ON,42.287289,-83.070213
 caon1759,Sandy Cove Acres,ON,44.353617,-79.549159
 caon0599,Sandy Lake,ON,53.056308,-93.324799
 caon0600,Sapawe,ON,48.768883,-91.329727
@@ -1811,7 +1801,7 @@ caon0634,Spanish,ON,46.1947959,-82.3422779
 caon0635,Sparta,ON,42.702484,-81.078814
 caon0636,Spencerville,ON,44.843305,-75.546362
 caon0637,Sprucedale,ON,45.490145,-79.462266
-caon0648,St-EugÃ¨ne,ON,45.500513,-74.4701259
+caon0648,St-Eugène,ON,45.500513,-74.4701259
 caon0642,St Isidore,ON,45.388496,-74.907358
 caon0638,St. Catharines,ON,43.1593745,-79.2468626
 caon0639,St. Charles,ON,46.34366,-80.439187
@@ -2010,17 +2000,17 @@ caqc0022,Baie-Comeau,QC,49.231985,-68.212321
 caqc0024,Baie-De-Shawinigan,QC,46.540309,-72.767944
 caqc0025,Baie-Des-Sables,QC,48.7192,-67.893766
 caqc0026,Baie-Du-Febvre,QC,46.1400409,-72.718433
-caqc0023,Baie-D'UrfÃ©,QC,45.4166667,-73.9166667
+caqc0023,Baie-D'Urfé,QC,45.4166667,-73.9166667
 caqc0027,Baie-Johan-Beetz,QC,50.3384659,-62.745802
 caqc0028,Baie-Saint-Paul,QC,47.44418,-70.510986
 caqc0029,Baie-Sainte-Catherine,QC,48.0997429,-69.722283
-caqc0030,Baie-TrinitÃ©,QC,49.426849,-67.281097
+caqc0030,Baie-Trinité,QC,49.426849,-67.281097
 caqc0032,Barachois,QC,48.6182779,-64.275145
 caqc0033,Barkmere,QC,45.998228,-74.57931
 caqc0034,Barraute,QC,48.437306,-77.637271
 caqc0035,Batiscan,QC,46.494521,-72.2513
 caqc0036,Beaconsfield,QC,45.432611,-73.857906
-caqc1424,BÃ©arn,QC,47.294862,-79.329129
+caqc1424,Béarn,QC,47.294862,-79.329129
 caqc0038,Beaucanton,QC,49.039337,-79.239488
 caqc0039,Beauceville,QC,46.21822,-70.775667
 caqc1480,Beaudry,QC,48.112833,-79.151033
@@ -2028,8 +2018,8 @@ caqc0040,Beauharnois,QC,45.310826,-73.887154
 caqc0175,Beaulac-Garthby,QC,45.834076,-71.382878
 caqc0428,Beaumont,QC,46.829575,-71.028139
 caqc0042,Beauport,QC,46.877784,-71.192076
-caqc0043,BeauprÃ©,QC,47.050515,-70.888836
-caqc0044,BÃ©cancour,QC,46.3438611,-72.4318889
+caqc0043,Beaupré,QC,47.050515,-70.888836
+caqc0044,Bécancour,QC,46.3438611,-72.4318889
 caqc0045,Bedford,QC,45.119831,-72.983391
 caqc1618,Bellecombe,QC,48.011085,-78.871667
 caqc0434,Bellefeuille,QC,45.784402,-74.08212
@@ -2049,7 +2039,7 @@ caqc0057,Bois-Des-Filion,QC,45.670957,-73.762874
 caqc0058,Boisbriand,QC,45.613621,-73.855504
 caqc0059,Boischatel,QC,46.896612,-71.135413
 caqc0060,Bonaventure,QC,48.051337,-65.459684
-caqc0061,Bonne-EspÃ©rance,QC,51.467805,-57.712959
+caqc0061,Bonne-Espérance,QC,51.467805,-57.712959
 caqc0062,Boucherville,QC,45.6,-73.45
 caqc0063,Bouchette,QC,46.20325,-75.958338
 caqc0762,Breakeyville,QC,46.676214,-71.226077
@@ -2069,7 +2059,7 @@ caqc0074,Calumet,QC,45.649551,-74.644172
 caqc0075,Campbell's Bay,QC,45.7333333,-76.5961111
 caqc0076,Candiac,QC,45.3833333,-73.5166667
 caqc1191,Cantley,QC,45.56413,-75.782095
-caqc0077,Cap-Ã€-L'Aigle,QC,47.662662,-70.110268
+caqc0077,Cap-À-L'Aigle,QC,47.662662,-70.110268
 caqc0078,Cap-Aux-Meules,QC,47.377698,-61.871598
 caqc0079,Cap-Chat,QC,49.1,-66.6833333
 caqc0080,Cap-De-La-Madeleine,QC,46.373459,-72.522591
@@ -2092,11 +2082,11 @@ caqc0096,Charlemagne,QC,45.7166667,-73.4833333
 caqc0097,Charlesbourg,QC,46.877772,-71.283441
 caqc0098,Charny,QC,46.716061,-71.264406
 caqc0099,Chartierville,QC,45.295768,-71.204631
-caqc0100,ChÃ¢teau-Richer,QC,46.990393,-71.024209
-caqc0101,ChÃ¢teauguay,QC,45.372716,-73.724291
+caqc0100,Château-Richer,QC,46.990393,-71.024209
+caqc0101,Châteauguay,QC,45.372716,-73.724291
 caqc1483,Chazel,QC,48.864174,-79.052832
 caqc0102,Chelsea,QC,45.504641,-75.783465
-caqc0103,ChÃ©nÃ©ville,QC,45.886285,-75.056772
+caqc0103,Chénéville,QC,45.886285,-75.056772
 caqc0527,Chertsey,QC,46.155477,-73.925921
 caqc0104,Chesterville,QC,45.962879,-71.821636
 caqc0105,Chevery,QC,50.466658,-59.62006
@@ -2107,7 +2097,7 @@ caqc0109,Chomedey,QC,45.545096,-73.762375
 caqc0110,Chute-Aux-Outardes,QC,49.126415,-68.393972
 caqc0111,Chute-Des-Passes,QC,50,-71.5833333
 caqc2064,Chute-Saint-Philippe,QC,46.653173,-75.240132
-caqc0115,ClÃ©ricy,QC,48.365167,-78.866458
+caqc0115,Cléricy,QC,48.365167,-78.866458
 caqc0116,Clermont,QC,47.69199,-70.226173
 caqc1620,Clerval,QC,48.748848,-79.444123
 caqc0117,Cloridorme,QC,49.177765,-64.837027
@@ -2115,11 +2105,11 @@ caqc1484,Cloutier,QC,48.010626,-79.151366
 caqc0118,Clova,QC,48.116667,-75.366667
 caqc0119,Coaticook,QC,45.108683,-71.83157
 caqc0120,Colombier,QC,48.864458,-68.853792
-caqc1521,ColombiÃ¨re,QC,48.083333,-77.583333
+caqc1521,Colombière,QC,48.083333,-77.583333
 caqc0121,Compton,QC,45.242345,-71.826976
 caqc0122,Contrecoeur,QC,45.857158,-73.2390659
 caqc0123,Cookshire,QC,45.413617,-71.624958
-caqc0124,CÃ´te-Saint-Luc,QC,45.4666667,-73.6666667
+caqc0124,Côte-Saint-Luc,QC,45.4666667,-73.6666667
 caqc0126,Coteau-Du-Lac,QC,45.296019,-74.1782379
 caqc0127,Courcelles,QC,45.873254,-70.984758
 caqc1196,Courcellette,QC,47.714588,-70.050081
@@ -2128,7 +2118,7 @@ caqc0129,Crabtree,QC,45.966033,-73.470612
 caqc0131,Danville,QC,45.7833333,-72.0166667
 caqc0132,Daveluyville,QC,46.202809,-72.136793
 caqc0133,Deauville,QC,45.342217,-72.041624
-caqc0134,DÃ©gelis,QC,47.5470556,-68.6425833
+caqc0134,Dégelis,QC,47.5470556,-68.6425833
 caqc0135,Delisle,QC,48.4512494,-71.0622537
 caqc0136,Delson,QC,45.380948,-73.536774
 caqc0137,Desbiens,QC,48.418049,-71.950868
@@ -2155,8 +2145,8 @@ caqc1530,East Sullivan Mines,QC,48.066667,-77.7
 caqc0154,Eastmain,QC,52.147747,-78.056744
 caqc0155,Eastman,QC,45.301296,-72.315042
 caqc0156,Entrelacs,QC,46.1130489,-74.003628
-caqc0158,EstÃ©rel,QC,46.045141,-74.028426
-caqc0159,Ã‰vain,QC,48.239142,-79.128396
+caqc0158,Estérel,QC,46.045141,-74.028426
+caqc0159,Évain,QC,48.239142,-79.128396
 caqc0160,Fabre,QC,47.198303,-79.366992
 caqc1201,Fabreville,QC,45.567473,-73.842222
 caqc0161,Farnham,QC,45.283748,-72.976764
@@ -2173,9 +2163,9 @@ caqc0170,Fossambault-Sur-Le-Lac,QC,46.869006,-71.62009
 caqc0171,Frampton,QC,46.460062,-70.806285
 caqc0172,Franklin Centre,QC,45.029372,-73.923732
 caqc0173,Frelighsburg,QC,45.055473,-72.837506
-caqc0174,FugÃ¨reville,QC,47.397512,-79.199853
+caqc0174,Fugèreville,QC,47.397512,-79.199853
 caqc1489,Gallichan,QC,48.602564,-79.288732
-caqc0176,GaspÃ©,QC,48.902945,-64.478683
+caqc0176,Gaspé,QC,48.902945,-64.478683
 caqc0177,Gatineau,QC,45.483933,-75.645632
 caqc0178,Gentilly,QC,46.402735,-72.274846
 caqc0179,Girardville,QC,49.003336,-72.545978
@@ -2183,16 +2173,16 @@ caqc0180,Godbout,QC,49.3166667,-67.6
 caqc0181,Gracefield,QC,46.09272,-76.053301
 caqc1596,Granada,QC,48.193262,-79.042384
 caqc0182,Granby,QC,45.398697,-72.722116
-caqc0184,Grand-MÃ¨re,QC,46.6166667,-72.7
+caqc0184,Grand-Mère,QC,46.6166667,-72.7
 caqc0185,Grand-Remous,QC,46.622392,-75.921546
-caqc0186,Grande-EntrÃ©e,QC,47.553866,-61.547364
-caqc0189,Grande-RiviÃ¨re,QC,48.395855,-64.491933
-caqc0190,Grande-VallÃ©e,QC,49.224592,-65.133466
+caqc0186,Grande-Entrée,QC,47.553866,-61.547364
+caqc0189,Grande-Rivière,QC,48.395855,-64.491933
+caqc0190,Grande-Vallée,QC,49.224592,-65.133466
 caqc0191,Grandes-Bergeronnes,QC,48.246277,-69.546096
 caqc0192,Grandes-Piles,QC,46.732864,-72.700736
 caqc0193,Greenfield Park,QC,45.485707,-73.462088
 caqc0194,Grenville,QC,45.629535,-74.599435
-caqc1394,GuÃ©rin,QC,47.662738,-79.314171
+caqc1394,Guérin,QC,47.662738,-79.314171
 caqc0195,Guigues,QC,47.466667,-79.433333
 caqc0197,Ham-Nord,QC,45.901008,-71.647989
 caqc0198,Hampstead,QC,45.479791,-73.636887
@@ -2200,8 +2190,8 @@ caqc0199,Harrington Harbour,QC,50.5,-59.483333
 caqc0201,Havre-Aubert,QC,47.23416,-61.846132
 caqc0202,Havre-Aux-Maisons,QC,47.474494,-61.735888
 caqc0203,Havre-Saint-Pierre,QC,50.241814,-63.598569
-caqc0204,HÃ©bertville,QC,48.394205,-71.677451
-caqc0205,HÃ©bertville-Station,QC,48.45,-71.6666667
+caqc0204,Hébertville,QC,48.394205,-71.677451
+caqc0205,Hébertville-Station,QC,48.45,-71.6666667
 caqc0206,Hemmingford,QC,45.049644,-73.5846229
 caqc0207,Henryville,QC,45.136618,-73.183796
 caqc0210,Howick,QC,45.185379,-73.848661
@@ -2212,7 +2202,7 @@ caqc0214,Iberville,QC,45.308154,-73.236145
 caqc0218,Inukjuak,QC,58.45591,-78.118156
 caqc0219,Inverness,QC,46.260084,-71.521953
 caqc0221,Joliette,QC,46.023222,-73.439239
-caqc0222,JonquiÃ¨re,QC,48.4166667,-71.25
+caqc0222,Jonquière,QC,48.4166667,-71.25
 caqc0223,Joutel,QC,49.458027,-78.305858
 caqc0224,Kangiqsualujjuaq,QC,58.689838,-65.969643
 caqc0226,Kangirsuk,QC,60.028278,-70.043083
@@ -2229,18 +2219,18 @@ caqc0232,Kuujjuaq,QC,58.1066667,-68.3986111
 caqc0246,La Baie,QC,48.33018,-70.878342
 caqc0247,La Corne,QC,48.356583,-77.995218
 caqc4302,La Croche,QC,47.585416,-72.743527
-caqc0248,La DorÃ©,QC,48.713548,-72.649473
+caqc0248,La Doré,QC,48.713548,-72.649473
 caqc0249,La Grande-1,QC,53.727222,-78.590278
 caqc1015,La Grande-Quatre,QC,53.833333,-73.533333
 caqc0250,La Guadeloupe,QC,45.969144,-70.938059
 caqc0251,La Malbaie,QC,47.682249,-70.137603
 caqc0252,La Martre,QC,49.20538,-66.165891
 caqc0253,La Minerve,QC,46.255327,-74.936517
-caqc1491,La MorandiÃ¨re,QC,48.616803,-77.638608
+caqc1491,La Morandière,QC,48.616803,-77.638608
 caqc1492,La Motte,QC,48.327271,-78.109683
 caqc0254,La Patrie,QC,45.401852,-71.252979
 caqc0255,La Plaine,QC,45.7911519,-73.76348
-caqc0256,La PocatiÃ¨re,QC,47.365386,-70.037873
+caqc0256,La Pocatière,QC,47.365386,-70.037873
 caqc0257,La Prairie,QC,45.416889,-73.488487
 caqc0258,La Reine,QC,48.865604,-79.5012
 caqc0259,La Romaine,QC,50.2159509,-60.668989
@@ -2253,16 +2243,16 @@ caqc0265,Lac-Aux-Sables,QC,46.859572,-72.398602
 caqc0266,Lac-Bouchette,QC,48.251398,-72.186114
 caqc0267,Lac-Brome,QC,45.2166667,-72.5166667
 caqc0268,Lac-Delage,QC,46.97,-71.406
-caqc0269,Lac-Des-Ã‰corces,QC,46.556399,-75.3640719
-caqc1937,Lac-Des-ÃŽles,QC,46.4,-75.533333
+caqc0269,Lac-Des-Écorces,QC,46.556399,-75.3640719
+caqc1937,Lac-Des-Îles,QC,46.4,-75.533333
 caqc1766,Lac-Des-Plages,QC,45.998934,-74.889751
 caqc0270,Lac-Drolet,QC,45.7194689,-70.850547
 caqc0271,Lac-Du-Cerf,QC,46.305773,-75.501439
-caqc0272,Lac-Ã‰douard,QC,47.66173,-72.271136
+caqc0272,Lac-Édouard,QC,47.66173,-72.271136
 caqc0273,Lac-Etchemin,QC,46.399241,-70.505494
-caqc0274,Lac-FrontiÃ¨re,QC,46.696454,-70.001088
-caqc1205,Lac-KÃ©nogami,QC,48.370804,-71.393412
-caqc0275,Lac-MÃ©gantic,QC,45.5833333,-70.8833333
+caqc0274,Lac-Frontière,QC,46.696454,-70.001088
+caqc1205,Lac-Kénogami,QC,48.370804,-71.393412
+caqc0275,Lac-Mégantic,QC,45.5833333,-70.8833333
 caqc0276,Lac-Poulin,QC,46.098743,-70.816002
 caqc0277,Lac-Saguay,QC,46.5,-75.15
 caqc1089,Lac-Saint-Charles,QC,46.909137,-71.385577
@@ -2284,7 +2274,7 @@ caqc0287,Lanoraie,QC,45.958717,-73.219668
 caqc0012,L'Anse-Saint-Jean,QC,48.234347,-70.201916
 caqc0289,Lasalle,QC,45.428867,-73.631252
 caqc0236,L'Assomption,QC,45.8166667,-73.4333333
-caqc0290,LaterriÃ¨re,QC,48.309201,-71.108722
+caqc0290,Laterrière,QC,48.309201,-71.108722
 caqc0291,Latulipe,QC,47.4272319,-79.032717
 caqc0292,Laurentides,QC,45.856845,-73.75517
 caqc0293,Laurier-Station,QC,46.5392,-71.631956
@@ -2294,32 +2284,32 @@ caqc1206,Laval-Des-Rapides,QC,45.554592,-73.70841
 caqc1207,Laval-Ouest,QC,45.538097,-73.87153
 caqc0296,Lavaltrie,QC,45.884565,-73.276918
 caqc0237,L'Avenir,QC,45.762228,-72.302983
-caqc0297,LaverlochÃ¨re,QC,47.426356,-79.307587
+caqc0297,Laverlochère,QC,47.426356,-79.307587
 caqc0298,Lawrenceville,QC,45.425172,-72.341462
 caqc0299,Le Bic,QC,48.3756429,-68.695243
 caqc0300,Le Gardeur,QC,45.7468333,-73.4765
-caqc0301,Lebel-Sur-QuÃ©villon,QC,49.052874,-76.981467
+caqc0301,Lebel-Sur-Quévillon,QC,49.052874,-76.981467
 caqc0302,Leclercville,QC,46.5712959,-71.998774
 caqc0304,Lemoyne,QC,45.5018889,-73.4906111
 caqc0305,Lennoxville,QC,45.367651,-71.851798
-caqc0238,L'Ã‰piphanie,QC,45.85,-73.4833333
-caqc0306,LÃ©ry,QC,45.35,-73.8
+caqc0238,L'Épiphanie,QC,45.85,-73.4833333
+caqc0306,Léry,QC,45.35,-73.8
 caqc0307,Les Boules,QC,48.683303,-67.964236
-caqc0308,Les CÃ¨dres,QC,45.3084931,-74.0582568
+caqc0308,Les Cèdres,QC,45.3084931,-74.0582568
 caqc1208,Les Coteaux,QC,45.278945,-74.231461
-caqc0309,Les Ã‰boulements,QC,47.478701,-70.323568
+caqc0309,Les Éboulements,QC,47.478701,-70.323568
 caqc0310,Les Escoumins,QC,48.347766,-69.405735
-caqc0217,Les ÃŽles-De-La-Madeleine,QC,47.5730748,-62.3255112
-caqc0311,Les MÃ©chins,QC,48.998648,-66.980884
+caqc0217,Les Îles-De-La-Madeleine,QC,47.5730748,-62.3255112
+caqc0311,Les Méchins,QC,48.998648,-66.980884
 caqc1958,Leslie-Clapham-Et-Huddersfield,QC,45.933333,-76.483333
-caqc0312,LÃ©vis,QC,46.802854,-71.176135
-caqc0215,L'ÃŽle-Aux-Coudres,QC,47.369561,-70.411049
-caqc1204,L'ÃŽle-Aux-Noix,QC,45.13294,-73.273977
-caqc0239,L'ÃŽle-Bizard,QC,45.490947,-73.881568
-caqc0240,L'ÃŽle-Cadieux,QC,45.4333333,-74.0166667
-caqc0241,L'ÃŽle-D'EntrÃ©e,QC,47.272517,-61.706782
-caqc0242,L'ÃŽle-Dorval,QC,45.43225,-73.7428889
-caqc0243,L'ÃŽle-Perrot,QC,45.39334,-73.955068
+caqc0312,Lévis,QC,46.802854,-71.176135
+caqc0215,L'Île-Aux-Coudres,QC,47.369561,-70.411049
+caqc1204,L'Île-Aux-Noix,QC,45.13294,-73.273977
+caqc0239,L'Île-Bizard,QC,45.490947,-73.881568
+caqc0240,L'Île-Cadieux,QC,45.4333333,-74.0166667
+caqc0241,L'Île-D'Entrée,QC,47.272517,-61.706782
+caqc0242,L'Île-Dorval,QC,45.43225,-73.7428889
+caqc0243,L'Île-Perrot,QC,45.39334,-73.955068
 caqc0244,L'Isle-Verte,QC,48.016388,-69.334
 caqc0245,L'Islet,QC,47.1030919,-70.350007
 caqc0965,Longue-Rive,QC,48.550157,-69.248703
@@ -2327,7 +2317,7 @@ caqc0313,Longueuil,QC,45.537405,-73.510726
 caqc0314,Loretteville,QC,46.855029,-71.360754
 caqc0315,Lorraine,QC,45.6594444,-73.7769444
 caqc0316,Lorrainville,QC,47.353902,-79.350875
-caqc1403,LotbiniÃ¨re,QC,46.616594,-71.930745
+caqc1403,Lotbinière,QC,46.616594,-71.930745
 caqc0317,Louiseville,QC,46.25,-72.9333333
 caqc0318,Lourdes-De-Blanc-Sablon,QC,51.412024,-57.203117
 caqc0319,Louvicourt,QC,48.053672,-77.369415
@@ -2348,18 +2338,18 @@ caqc0334,Maria,QC,48.174185,-65.982309
 caqc0335,Marieville,QC,45.432812,-73.1601
 caqc0336,Marsoui,QC,49.214761,-66.067461
 caqc0337,Mascouche,QC,45.750005,-73.600005
-caqc0338,MaskinongÃ©,QC,46.226616,-73.01655
+caqc0338,Maskinongé,QC,46.226616,-73.01655
 caqc0339,Masson-Angers,QC,45.544673,-75.414053
 caqc0340,Massueville,QC,45.911798,-72.928225
 caqc0341,Matagami,QC,49.750809,-77.682965
 caqc0342,Matane,QC,48.85,-67.5166667
-caqc0343,MatapÃ©dia,QC,47.9741039,-66.95347
+caqc0343,Matapédia,QC,47.9741039,-66.95347
 caqc1209,Mcmasterville,QC,45.54949,-73.221696
 caqc0344,Melbourne,QC,45.657283,-72.1481079
 caqc0345,Melocheville,QC,45.313634,-73.936344
 caqc0346,Mercier,QC,45.317197,-73.747244
-caqc0347,MÃ©tabetchouan,QC,48.4333333,-71.8666667
-caqc0348,MÃ©tis-Sur-Mer,QC,48.666559,-68.015307
+caqc0347,Métabetchouan,QC,48.4333333,-71.8666667
+caqc0348,Métis-Sur-Mer,QC,48.666559,-68.015307
 caqc1555,Miquelon,QC,49.4,-76.45
 caqc0350,Mirabel,QC,45.65,-74.1
 caqc0351,Mistassini,QC,50.9168318,-73.6864179
@@ -2372,7 +2362,7 @@ caqc0354,Mont-Laurier,QC,46.553083,-75.497074
 caqc0355,Mont-Louis,QC,49.229456,-65.730698
 caqc0356,Mont-Rolland,QC,45.9516667,-74.1347222
 caqc0357,Mont-Royal,QC,45.516322,-73.643746
-caqc1210,Mont-Saint-GrÃ©goire,QC,45.338382,-73.162562
+caqc1210,Mont-Saint-Grégoire,QC,45.338382,-73.162562
 caqc0358,Mont-Saint-Hilaire,QC,45.565015,-73.191316
 caqc1778,Mont-Saint-Michel,QC,46.778941,-75.338309
 caqc0359,Mont-Saint-Pierre,QC,49.222586,-65.80706
@@ -2381,10 +2371,10 @@ caqc1495,Montbeillard,QC,48.0399249,-79.25211
 caqc0361,Montebello,QC,45.657472,-74.945704
 caqc0362,Montmagny,QC,46.9666667,-70.55
 caqc1777,Montpellier,QC,45.8548959,-75.163574
-caqc0363,MontrÃ©al,QC,45.5088889,-73.5541667
-caqc1212,MontrÃ©al-Est,QC,45.631356,-73.519375
-caqc1213,MontrÃ©al-Nord,QC,45.599367,-73.629556
-caqc1214,MontrÃ©al-Ouest,QC,45.452281,-73.647685
+caqc0363,Montréal,QC,45.5088889,-73.5541667
+caqc1212,Montréal-Est,QC,45.631356,-73.519375
+caqc1213,Montréal-Nord,QC,45.599367,-73.629556
+caqc1214,Montréal-Ouest,QC,45.452281,-73.647685
 caqc0364,Morin-Heights,QC,45.903793,-74.246103
 caqc0365,Murdochville,QC,48.953978,-65.485197
 caqc0366,Mutton Bay,QC,50.772916,-59.028645
@@ -2392,7 +2382,7 @@ caqc1779,Namur,QC,45.899232,-74.944759
 caqc0367,Nantes,QC,45.63018,-71.020996
 caqc0368,Napierville,QC,45.187055,-73.401653
 caqc0369,Natashquan,QC,50.194501,-61.831508
-caqc0370,NÃ©dÃ©lec,QC,47.688042,-79.4233689
+caqc0370,Nédélec,QC,47.688042,-79.4233689
 caqc1508,Nemiscau,QC,51.6910219,-76.135998
 caqc0372,Neuville,QC,46.712147,-71.603239
 caqc0373,New Carlisle,QC,48.008641,-65.336765
@@ -2402,12 +2392,12 @@ caqc0376,Newport,QC,48.2671009,-64.743106
 caqc0377,Nicolet,QC,46.2166667,-72.6166667
 caqc0379,Norbertville,QC,46.106797,-71.819207
 caqc0380,Normandin,QC,48.8333333,-72.5333333
-caqc0381,NormÃ©tal,QC,48.998762,-79.365243
+caqc0381,Normétal,QC,48.998762,-79.365243
 caqc0382,North Hatley,QC,45.274509,-71.97394
 caqc1211,Notre-Dame-De-Bon-Secours,QC,45.405098,-73.225331
 caqc0385,Notre-Dame-De-La-Paix,QC,45.808704,-74.967927
 caqc0386,Notre-Dame-De-La-Salette,QC,45.765729,-75.584528
-caqc1215,Notre-Dame-De-L'ÃŽle-Perrot,QC,45.380082,-73.896164
+caqc1215,Notre-Dame-De-L'Île-Perrot,QC,45.380082,-73.896164
 caqc0383,Notre-Dame-De-Lourdes,QC,46.326134,-71.82702
 caqc1780,Notre-Dame-De-Pontmain,QC,46.284818,-75.632059
 caqc0387,Notre-Dame-De-Stanbridge,QC,45.170445,-73.030572
@@ -2425,15 +2415,15 @@ caqc1237,Orford,QC,45.383333,-72.2
 caqc0396,Ormstown,QC,45.125586,-73.992052
 caqc1941,Otter Lake,QC,45.848858,-76.429047
 caqc0397,Otterburn Park,QC,45.53784,-73.207117
-caqc1509,OujÃ©-Bougoumou,QC,49.925556,-74.817778
+caqc1509,Oujé-Bougoumou,QC,49.925556,-74.817778
 caqc0398,Outremont,QC,45.513765,-73.605705
 caqc0399,Palmarolle,QC,48.660829,-79.199788
 caqc0400,Papineauville,QC,45.617287,-75.016828
 caqc0403,Parent,QC,47.920494,-74.614276
-caqc0405,PercÃ©,QC,48.5238889,-64.2130556
-caqc0406,PÃ©ribonka,QC,48.766536,-72.05337
+caqc0405,Percé,QC,48.5238889,-64.2130556
+caqc0406,Péribonka,QC,48.766536,-72.05337
 caqc0407,Perkins,QC,45.600786,-75.6206909
-caqc0408,Petite-RiviÃ¨re-Saint-FranÃ§ois,QC,47.307743,-70.568109
+caqc0408,Petite-Rivière-Saint-François,QC,47.307743,-70.568109
 caqc0409,Philipsburg,QC,45.03915,-73.074646
 caqc0410,Pierrefonds,QC,45.484871,-73.853109
 caqc0411,Pierreville,QC,46.070883,-72.811909
@@ -2441,9 +2431,9 @@ caqc0412,Pincourt,QC,45.373967,-73.98661
 caqc1218,Pintendre,QC,46.76427,-71.133286
 caqc1219,Plaisance,QC,45.606277,-75.113937
 caqc0413,Plessisville,QC,46.219445,-71.772135
-caqc0414,PohÃ©nÃ©gamook,QC,47.4666667,-69.2166667
-caqc0415,Pointe-Ã€-La-Croix,QC,48.01602,-66.684453
-caqc0416,Pointe-Au-PÃ¨re,QC,48.5166667,-68.4666667
+caqc0414,Pohénégamook,QC,47.4666667,-69.2166667
+caqc0415,Pointe-À-La-Croix,QC,48.01602,-66.684453
+caqc0416,Pointe-Au-Père,QC,48.5166667,-68.4666667
 caqc0417,Pointe-Aux-Outardes,QC,49.052391,-68.394218
 caqc1220,Pointe-Aux-Trembles,QC,45.65285,-73.510821
 caqc0418,Pointe-Calumet,QC,45.4985069,-73.969932
@@ -2462,16 +2452,16 @@ caqc0432,Portage-Du-Fort,QC,45.593286,-76.660131
 caqc0433,Portneuf,QC,46.698625,-71.890944
 caqc1497,Poularies,QC,48.665747,-78.984565
 caqc1498,Preissac,QC,48.388018,-78.365927
-caqc1222,PrÃ©vost,QC,45.865674,-74.0721
+caqc1222,Prévost,QC,45.865674,-74.0721
 caqc0437,Price,QC,48.602306,-68.123854
 caqc0438,Princeville,QC,46.171545,-71.875581
 caqc0439,Puvirnituq,QC,60.037118,-77.2692299
-caqc0441,QuÃ©bec,QC,46.8032826,-71.242796
+caqc0441,Québec,QC,46.8032826,-71.242796
 caqc0442,Quyon,QC,45.519919,-76.2365049
 caqc0443,Radisson,QC,53.792039,-77.616743
 caqc1499,Rapide-Danseur,QC,48.551452,-79.30081
 caqc0444,Rawdon,QC,46.045717,-73.71073
-caqc0445,RÃ©migny,QC,47.760223,-79.209085
+caqc0445,Rémigny,QC,47.760223,-79.209085
 caqc0446,Repentigny,QC,45.749884,-73.454165
 caqc0447,Richelieu,QC,45.442415,-73.232379
 caqc0448,Richmond,QC,45.6619,-72.141434
@@ -2479,49 +2469,49 @@ caqc0449,Rigaud,QC,45.479211,-74.30225
 caqc0450,Rimouski,QC,48.4333333,-68.5166667
 caqc0451,Rimouski-Est,QC,48.4686019,-68.4896751
 caqc0452,Ripon,QC,45.7858639,-75.098867
-caqc0453,RiviÃ¨re-Ã€-Pierre,QC,46.984212,-72.179869
-caqc0454,RiviÃ¨re-Au-Renard,QC,48.992241,-64.383984
-caqc0455,RiviÃ¨re-Au-Tonnerre,QC,50.2751919,-64.768603
-caqc0456,RiviÃ¨re-Beaudette,QC,45.236337,-74.338685
-caqc0457,RiviÃ¨re-Bleue,QC,47.433729,-69.044451
-caqc0458,RiviÃ¨re-Du-Loup,QC,47.835877,-69.536136
-caqc0459,RiviÃ¨re-HÃ©va,QC,48.238334,-78.216437
-caqc5618,RiviÃ¨re-Rouge,QC,46.0024891,-74.6360246
-caqc0460,RiviÃ¨re-Saint-Jean,QC,50.291407,-64.331751
+caqc0453,Rivière-À-Pierre,QC,46.984212,-72.179869
+caqc0454,Rivière-Au-Renard,QC,48.992241,-64.383984
+caqc0455,Rivière-Au-Tonnerre,QC,50.2751919,-64.768603
+caqc0456,Rivière-Beaudette,QC,45.236337,-74.338685
+caqc0457,Rivière-Bleue,QC,47.433729,-69.044451
+caqc0458,Rivière-Du-Loup,QC,47.835877,-69.536136
+caqc0459,Rivière-Héva,QC,48.238334,-78.216437
+caqc5618,Rivière-Rouge,QC,46.0024891,-74.6360246
+caqc0460,Rivière-Saint-Jean,QC,50.291407,-64.331751
 caqc0461,Robertsonville,QC,46.141421,-71.215124
 caqc0462,Roberval,QC,48.513852,-72.232837
 caqc0463,Rochebaucourt,QC,48.675275,-77.5012409
 caqc0464,Rock Forest,QC,45.3714167,-71.9881944
 caqc0466,Rollet,QC,47.9131,-79.2447959
 caqc1500,Roquemaure,QC,48.6051,-79.4058809
-caqc0467,RosemÃ¨re,QC,45.6333333,-73.8166667
+caqc0467,Rosemère,QC,45.6333333,-73.8166667
 caqc0468,Rougemont,QC,45.434245,-73.05165
 caqc0469,Rouyn-Noranda,QC,48.2333333,-79.0166667
 caqc0470,Roxboro,QC,45.503375,-73.80474
 caqc0471,Roxton Falls,QC,45.5737669,-72.521591
 caqc0472,Roxton Pond,QC,45.476259,-72.664571
 caqc1223,Sabrevois,QC,45.207223,-73.2293399
-caqc0473,SacrÃ©-Coeur,QC,48.229645,-69.800621
+caqc0473,Sacré-Coeur,QC,48.229645,-69.800621
 caqc0996,Saguenay,QC,48.427734,-71.062923
 caqc0530,Saint-Adelphe,QC,46.7344719,-72.431511
 caqc0532,Saint-Adolphe-De-Dudswell,QC,45.63458,-71.591497
 caqc0531,Saint-Adolphe-D'Howard,QC,45.9666349,-74.331068
 caqc0533,Saint-Agapit,QC,46.562093,-71.433443
-caqc0534,Saint-AimÃ©,QC,45.9166669,-72.933333
+caqc0534,Saint-Aimé,QC,45.9166669,-72.933333
 caqc0535,Saint-Albert,QC,46.001564,-72.088701
 caqc1224,Saint-Alexandre,QC,47.682671,-69.621071
 caqc0536,Saint-Alexandre-De-Kamouraska,QC,47.683473,-69.624886
 caqc0537,Saint-Alexis,QC,45.9333333,-73.6166667
-caqc0538,Saint-Alexis-De-MatapÃ©dia,QC,47.970774,-67.050074
+caqc0538,Saint-Alexis-De-Matapédia,QC,47.970774,-67.050074
 caqc0539,Saint-Alexis-Des-Monts,QC,46.462426,-73.1435599
 caqc1225,Saint-Alphonse-De-Granby,QC,45.329043,-72.817201
 caqc0540,Saint-Alphonse-Rodriguez,QC,46.183928,-73.6929849
 caqc1226,Saint-Amable,QC,45.656377,-73.300448
 caqc0495,Saint-Ambroise,QC,48.5595519,-71.323984
-caqc0541,Saint-AndrÃ©,QC,47.675948,-69.724848
-caqc0542,Saint-AndrÃ©-Avellin,QC,45.7271348,-75.0531834
-caqc0543,Saint-AndrÃ©-Du-Lac-Saint-Jean,QC,48.3166667,-71.9833333
-caqc0544,Saint-AndrÃ©-Est,QC,45.562811,-74.336044
+caqc0541,Saint-André,QC,47.675948,-69.724848
+caqc0542,Saint-André-Avellin,QC,45.7271348,-75.0531834
+caqc0543,Saint-André-Du-Lac-Saint-Jean,QC,48.3166667,-71.9833333
+caqc0544,Saint-André-Est,QC,45.562811,-74.336044
 caqc1400,Saint-Anicet,QC,45.135455,-74.362325
 caqc0545,Saint-Anselme,QC,46.630569,-70.970955
 caqc0546,Saint-Antoine,QC,45.762417,-73.98194
@@ -2532,8 +2522,8 @@ caqc1228,Saint-Antonin,QC,47.7604479,-69.479129
 caqc0548,Saint-Apollinaire,QC,46.613619,-71.512415
 caqc1229,Saint-Athanase,QC,47.438401,-69.415881
 caqc0549,Saint-Augustin-De-Desmaures,QC,46.747041,-71.459344
-caqc0550,Saint-BarnabÃ©,QC,46.395381,-72.879383
-caqc0551,Saint-BarthÃ©lemy,QC,46.1912,-73.12033
+caqc0550,Saint-Barnabé,QC,46.395381,-72.879383
+caqc0551,Saint-Barthélemy,QC,46.1912,-73.12033
 caqc0497,Saint-Basile,QC,46.767057,-71.822599
 caqc0552,Saint-Basile-Le-Grand,QC,45.5333333,-73.2833333
 caqc0553,Saint-Basile-Sud,QC,46.75649,-71.824832
@@ -2546,17 +2536,17 @@ caqc0557,Saint-Bruno-De-Montarville,QC,45.5333333,-73.35
 caqc1230,Saint-Calixte,QC,45.951803,-73.848597
 caqc0558,Saint-Calixte-De-Kilkenny,QC,45.95,-73.85
 caqc0559,Saint-Casimir,QC,46.655253,-72.1397719
-caqc0560,Saint-CÃ©lestin,QC,46.213625,-72.432438
-caqc0561,Saint-CÃ©saire,QC,45.410364,-73.002159
-caqc1231,Saint-Charles-BorromÃ©e,QC,46.048522,-73.4626679
+caqc0560,Saint-Célestin,QC,46.213625,-72.432438
+caqc0561,Saint-Césaire,QC,45.410364,-73.002159
+caqc1231,Saint-Charles-Borromée,QC,46.048522,-73.4626679
 caqc0562,Saint-Charles-De-Bellechasse,QC,46.769348,-70.943256
 caqc1232,Saint-Charles-Sur-Richelieu,QC,45.690864,-73.186499
 caqc1233,Saint-Christophe-D'Arthabaska,QC,46.048564,-71.933521
 caqc0563,Saint-Chrysostome,QC,45.101434,-73.762203
 caqc0564,Saint-Clet,QC,45.35355,-74.219613
 caqc1234,Saint-Colomban,QC,45.738494,-74.1358
-caqc0112,Saint-CÃ´me,QC,46.270537,-73.771845
-caqc0501,Saint-CÃ´me--LiniÃ¨re,QC,46.058553,-70.518247
+caqc0112,Saint-Côme,QC,46.270537,-73.771845
+caqc0501,Saint-Côme--Linière,QC,46.058553,-70.518247
 caqc0565,Saint-Constant,QC,45.364478,-73.57264
 caqc0566,Saint-Cyrille-De-Wendover,QC,45.932899,-72.424484
 caqc0567,Saint-Damase,QC,45.52783,-73.00806
@@ -2567,54 +2557,54 @@ caqc1235,Saint-Denis-De-Brompton,QC,45.457837,-72.080256
 caqc1236,Saint-Denis-Sur-Richelieu,QC,45.786245,-73.159234
 caqc1353,Saint-Dominique,QC,45.56647,-72.855683
 caqc0570,Saint-Donat,QC,46.319515,-74.220387
-caqc0571,Saint-Ã‰douard-De-LotbiniÃ¨re,QC,46.566667,-71.833333
-caqc0572,Saint-Ã‰leuthÃ¨re,QC,47.4666667,-69.2166667
-caqc0187,Saint-Ã‰lie,QC,46.48998,-72.958555
-caqc0167,Saint-Ã‰lie-D'Orford,QC,45.3714167,-71.9881944
-caqc0573,Saint-Ã‰mile,QC,46.87269,-71.335074
-caqc0574,Saint-Ã‰mile-De-Suffolk,QC,45.930396,-74.9135809
-caqc0575,Saint-Ã‰phrem-De-Beauce,QC,46.055456,-70.939049
-caqc0576,Saint-Ã‰phrem-De-Tring,QC,46.059288,-70.953896
+caqc0571,Saint-Édouard-De-Lotbinière,QC,46.566667,-71.833333
+caqc0572,Saint-Éleuthère,QC,47.4666667,-69.2166667
+caqc0187,Saint-Élie,QC,46.48998,-72.958555
+caqc0167,Saint-Élie-D'Orford,QC,45.3714167,-71.9881944
+caqc0573,Saint-Émile,QC,46.87269,-71.335074
+caqc0574,Saint-Émile-De-Suffolk,QC,45.930396,-74.9135809
+caqc0575,Saint-Éphrem-De-Beauce,QC,46.055456,-70.939049
+caqc0576,Saint-Éphrem-De-Tring,QC,46.059288,-70.953896
 caqc1238,Saint-Esprit,QC,45.902671,-73.664329
-caqc1239,Saint-Ã‰tienne-De-Beauharnois,QC,45.2469139,-73.9148529
-caqc1240,Saint-Ã‰tienne-De-Lauzon,QC,46.651721,-71.3011889
-caqc0577,Saint-EugÃ¨ne-De-Guigues,QC,47.511908,-79.351774
+caqc1239,Saint-Étienne-De-Beauharnois,QC,45.2469139,-73.9148529
+caqc1240,Saint-Étienne-De-Lauzon,QC,46.651721,-71.3011889
+caqc0577,Saint-Eugène-De-Guigues,QC,47.511908,-79.351774
 caqc0578,Saint-Eustache,QC,45.570947,-73.898663
 caqc0503,Saint-Fabien,QC,48.2990039,-68.8670099
 caqc0579,Saint-Fabien-De-Panet,QC,46.654844,-70.146556
-caqc0580,Saint-FÃ©licien,QC,48.6577709,-72.450979
-caqc1504,Saint-FÃ©lix-De-Dalquier,QC,48.675754,-78.114254
-caqc0581,Saint-FÃ©lix-De-Kingsey,QC,45.794329,-72.190388
-caqc0582,Saint-FÃ©lix-De-Valois,QC,46.168418,-73.429051
-caqc0938,Saint-FÃ©lix-D'Otis,QC,48.273591,-70.6262859
+caqc0580,Saint-Félicien,QC,48.6577709,-72.450979
+caqc1504,Saint-Félix-De-Dalquier,QC,48.675754,-78.114254
+caqc0581,Saint-Félix-De-Kingsey,QC,45.794329,-72.190388
+caqc0582,Saint-Félix-De-Valois,QC,46.168418,-73.429051
+caqc0938,Saint-Félix-D'Otis,QC,48.273591,-70.6262859
 caqc0049,Saint-Ferdinand,QC,46.135077,-71.589165
-caqc1241,Saint-FerrÃ©ol-Les-Neiges,QC,47.116888,-70.8598279
-caqc0507,Saint-FidÃ¨le,QC,47.737241,-69.994983
+caqc1241,Saint-Ferréol-Les-Neiges,QC,47.116888,-70.8598279
+caqc0507,Saint-Fidèle,QC,47.737241,-69.994983
 caqc0584,Saint-Flavien,QC,46.513281,-71.595336
-caqc0585,Saint-FranÃ§ois-Du-Lac,QC,46.063784,-72.819094
+caqc0585,Saint-François-Du-Lac,QC,46.063784,-72.819094
 caqc0586,Saint-Fulgence,QC,48.449822,-70.903171
 caqc0587,Saint-Gabriel,QC,46.3,-73.3833333
 caqc0588,Saint-Gabriel-De-Brandon,QC,46.266667,-73.3833329
 caqc0509,Saint-Gabriel-De-Rimouski,QC,48.422394,-68.174162
-caqc0589,Saint-GÃ©dÃ©on,QC,48.495156,-71.775918
-caqc0510,Saint-GÃ©dÃ©on-De-Beauce,QC,45.847034,-70.6157549
+caqc0589,Saint-Gédéon,QC,48.495156,-71.775918
+caqc0510,Saint-Gédéon-De-Beauce,QC,45.847034,-70.6157549
 caqc0591,Saint-Georges,QC,46.1166667,-70.6666667
 caqc0592,Saint-Georges-De-Cacouna,QC,47.918875,-69.500159
-caqc0593,Saint-GÃ©rard,QC,45.75811,-71.411981
-caqc1242,Saint-GÃ©rard-Majella,QC,45.896486,-73.432098
+caqc0593,Saint-Gérard,QC,45.75811,-71.411981
+caqc1242,Saint-Gérard-Majella,QC,45.896486,-73.432098
 caqc0594,Saint-Germain-De-Grantham,QC,45.842833,-72.567166
 caqc0511,Saint Gregoire,QC,46.272244,-72.510935
-caqc0595,Saint-GrÃ©goire-De-Greenlay,QC,45.5660839,-72.012316
+caqc0595,Saint-Grégoire-De-Greenlay,QC,45.5660839,-72.012316
 caqc0596,Saint-Guillaume,QC,45.885036,-72.764355
 caqc0512,Saint-Henri,QC,46.691938,-71.067264
 caqc0597,Saint-Hilarion,QC,47.574064,-70.398597
 caqc0598,Saint-Hippolyte,QC,45.92969,-74.025851
-caqc0600,Saint-HonorÃ©,QC,45.9606039,-70.826749
-caqc0513,Saint-HonorÃ©-De-TÃ©miscouata,QC,47.70823,-69.133973
+caqc0600,Saint-Honoré,QC,45.9606039,-70.826749
+caqc0513,Saint-Honoré-De-Témiscouata,QC,47.70823,-69.133973
 caqc0601,Saint-Hubert,QC,45.4833333,-73.4333333
 caqc0602,Saint-Hugues,QC,45.794832,-72.859852
 caqc0603,Saint-Hyacinthe,QC,45.6306875,-72.9563391
-caqc0604,Saint-IrÃ©nÃ©e,QC,47.566198,-70.205346
+caqc0604,Saint-Irénée,QC,47.566198,-70.205346
 caqc1243,Saint-Isidore,QC,45.3000964,-73.6812559
 caqc0605,Saint-Jacques,QC,45.945341,-73.572669
 caqc1244,Saint-Jean-Baptiste,QC,48.571965,-68.21721
@@ -2623,26 +2613,25 @@ caqc0607,Saint-Jean-De-Dieu,QC,48.003513,-69.046199
 caqc0608,Saint-Jean-De-Matha,QC,46.233843,-73.529825
 caqc0609,Saint-Jean-Port-Joli,QC,47.214159,-70.269334
 caqc0610,Saint-Jean-Sur-Richelieu,QC,45.305665,-73.253953
-caqc0611,Saint-JÃ©rÃ´me,QC,45.7833333,-74
+caqc0611,Saint-Jérôme,QC,45.7833333,-74
 caqc1246,Saint-Joachim,QC,47.055816,-70.844008
 caqc0612,Saint-Joseph-De-Beauce,QC,46.316561,-70.862135
-caqc1277,Saint-Joseph-De-La-Pointe-De-LÃ©vy,QC,46.8,-71.083333
+caqc1277,Saint-Joseph-De-La-Pointe-De-Lévy,QC,46.8,-71.083333
 caqc0613,Saint-Joseph-De-La-Rive,QC,47.478701,-70.323568
 caqc0614,Saint-Joseph-De-Sorel,QC,46.04226,-73.125977
 caqc0615,Saint-Jovite,QC,46.118043,-74.600589
 caqc0616,Saint-Jude,QC,45.770967,-72.992374
-caqc0617,Saint-Just-De-BreteniÃ¨res,QC,46.5669449,-70.094257
+caqc0617,Saint-Just-De-Bretenières,QC,46.5669449,-70.094257
 caqc0618,Saint-Lambert,QC,45.492043,-73.502021
 caqc0619,Saint-Lambert-De-Lauzon,QC,46.587424,-71.211668
 caqc0620,Saint-Laurent,QC,45.5172008,-73.6667383
-caqc1247,Saint-Laurent-De-L'ÃŽle-D'OrlÃ©ans,QC,46.8610619,-71.005298
+caqc1247,Saint-Laurent-De-L'Île-D'Orléans,QC,46.8610619,-71.005298
 caqc1248,Saint-Lazare,QC,46.649779,-70.800333
-caqc1031,Saint-LÃ©on-De-Standon,QC,46.478715,-70.617807
-caqc0621,Saint-LÃ©on-Le-Grand,QC,48.380203,-67.504796
-caqc0622,Saint-LÃ©onard,QC,45.587507,-73.591395
-caqc0623,Saint-LÃ©onard-D'Aston,QC,46.108148,-72.379669
+caqc1031,Saint-Léon-De-Standon,QC,46.478715,-70.617807
+caqc0621,Saint-Léon-Le-Grand,QC,48.380203,-67.504796
+caqc0622,Saint-Léonard,QC,45.587507,-73.591395
+caqc0623,Saint-Léonard-D'Aston,QC,46.108148,-72.379669
 caqc0624,Saint-Liboire,QC,45.651107,-72.759029
-caqc0625,Saint-LinÂ–Laurentides,QC,0,0
 caqc0626,Saint-Louis-De-France,QC,46.4208333,-72.5986111
 caqc0627,Saint-Luc,QC,45.3614444,-73.3051667
 caqc0628,Saint-Ludger,QC,45.741986,-70.69447
@@ -2650,7 +2639,7 @@ caqc0629,Saint-Magloire,QC,46.576899,-70.290234
 caqc0630,Saint-Malachie,QC,46.529431,-70.763702
 caqc0631,Saint-Malo,QC,45.199529,-71.500486
 caqc1610,Saint-Marc-De-Figuery,QC,48.472415,-78.045881
-caqc0632,Saint-Marc-Des-CarriÃ¨res,QC,46.67881,-72.051407
+caqc0632,Saint-Marc-Des-Carrières,QC,46.67881,-72.051407
 caqc1250,Saint-Marc-Sur-Richelieu,QC,45.677585,-73.193721
 caqc0517,Saint-Martin,QC,45.95949,-70.656531
 caqc1251,Saint-Mathias-Sur-Richelieu,QC,45.459487,-73.256736
@@ -2658,17 +2647,17 @@ caqc1253,Saint-Mathieu,QC,45.328194,-73.524777
 caqc1252,Saint-Mathieu-De-Beloeil,QC,45.5692833,-73.2025936
 caqc1611,Saint-Mathieu-D'Harricana,QC,48.472446,-78.138219
 caqc1254,Saint-Maurice,QC,46.470338,-72.528761
-caqc0633,Saint-MÃ©thode-De-Frontenac,QC,46.046437,-71.076236
+caqc0633,Saint-Méthode-De-Frontenac,QC,46.046437,-71.076236
 caqc0634,Saint-Michel-De-Bellechasse,QC,46.871894,-70.910265
 caqc0520,Saint-Michel-Des-Saints,QC,46.675179,-73.916779
-caqc0521,Saint-MoÃ¯se,QC,48.5513509,-67.851207
+caqc0521,Saint-Moïse,QC,48.5513509,-67.851207
 caqc0636,Saint-Nazaire-D'Acton,QC,45.7376069,-72.619431
 caqc0637,Saint-Nicolas,QC,46.7,-71.4
-caqc0638,Saint-NoÃ«l,QC,48.583,-67.833
+caqc0638,Saint-Noël,QC,48.583,-67.833
 caqc1255,Saint-Norbert-D'Arthabaska,QC,46.0856009,-71.802856
 caqc0639,Saint-Odilon-De-Cranbourne,QC,46.357515,-70.676306
 caqc0640,Saint-Ours,QC,45.882633,-73.134203
-caqc0641,Saint-PacÃ´me,QC,47.409322,-69.947818
+caqc0641,Saint-Pacôme,QC,47.409322,-69.947818
 caqc0642,Saint-Pamphile,QC,46.961075,-69.791735
 caqc0643,Saint-Pascal,QC,47.528531,-69.800762
 caqc0644,Saint-Patrice-De-Beaurivage,QC,46.4111509,-71.234846
@@ -2677,7 +2666,7 @@ caqc0646,Saint-Paul-De-Montminy,QC,46.731057,-70.3603289
 caqc1256,Saint-Paul-D'Industrie,QC,45.980341,-73.447305
 caqc0647,Saint-Paulin,QC,46.417212,-73.013521
 caqc1257,Saint-Philippe,QC,45.355008,-73.4753549
-caqc0648,Saint-Philippe-De-NÃ©ri,QC,47.468568,-69.884536
+caqc0648,Saint-Philippe-De-Néri,QC,47.468568,-69.884536
 caqc0649,Saint-Pie,QC,45.501503,-72.899801
 caqc0650,Saint-Pie-De-Guire,QC,46.002556,-72.748233
 caqc1258,Saint-Pierre,QC,46.0166667,-73.4666667
@@ -2686,55 +2675,55 @@ caqc0653,Saint-Pierre-Les-Becquets,QC,46.499427,-72.201983
 caqc0654,Saint-Polycarpe,QC,45.302122,-74.304183
 caqc0655,Saint-Prime,QC,48.593265,-72.33598
 caqc0656,Saint-Prosper-De-Dorchester,QC,46.210568,-70.4825819
-caqc0524,Saint-RaphaÃ«l,QC,46.798198,-70.751093
+caqc0524,Saint-Raphaël,QC,46.798198,-70.751093
 caqc0657,Saint-Raymond,QC,46.92729,-71.817695
-caqc0658,Saint-RÃ©dempteur,QC,46.700603,-71.28476
-caqc0659,Saint-RÃ©mi,QC,45.261219,-73.619241
-caqc0660,Saint-RenÃ©-De-Matane,QC,48.707031,-67.388377
+caqc0658,Saint-Rédempteur,QC,46.700603,-71.28476
+caqc0659,Saint-Rémi,QC,45.261219,-73.619241
+caqc0660,Saint-René-De-Matane,QC,48.707031,-67.388377
 caqc1259,Saint-Robert,QC,45.972392,-73.000046
 caqc1260,Saint-Roch-De-L'Achigan,QC,45.855384,-73.5925929
-caqc0661,Saint-Roch-De-MÃ©kinac,QC,46.803887,-72.771399
+caqc0661,Saint-Roch-De-Mékinac,QC,46.803887,-72.771399
 caqc1261,Saint-Roch-De-Richelieu,QC,45.889685,-73.156231
 caqc0662,Saint-Roch-Des-Aulnaies,QC,47.310875,-70.176547
 caqc0663,Saint-Romuald,QC,46.74737,-71.241976
 caqc1390,Saint-Rosaire,QC,46.164192,-72.02668
 caqc0664,Saint-Sauveur,QC,45.885478,-74.180024
 caqc0665,Saint-Sauveur-Des-Monts,QC,45.893682,-74.161776
-caqc0525,Saint-SÃ©bastien,QC,45.781458,-70.968954
-caqc0666,Saint-SimÃ©on,QC,47.844387,-69.877795
+caqc0525,Saint-Sébastien,QC,45.781458,-70.968954
+caqc0666,Saint-Siméon,QC,47.844387,-69.877795
 caqc0667,Saint-Simon-De-Bagot,QC,45.734985,-72.8723459
 caqc0668,Saint-Simon-De-Rimouski,QC,48.19972,-69.0495059
 caqc0526,Saint-Stanislas,QC,49.007526,-72.176134
 caqc1262,Saint-Sulpice,QC,45.827104,-73.35429
-caqc0669,Saint-SylvÃ¨re,QC,46.233218,-72.224165
+caqc0669,Saint-Sylvère,QC,46.233218,-72.224165
 caqc0670,Saint-Sylvestre,QC,46.363439,-71.226646
-caqc0671,Saint-ThÃ©ophile,QC,45.936921,-70.485411
+caqc0671,Saint-Théophile,QC,45.936921,-70.485411
 caqc1263,Saint-Thomas,QC,46.015647,-73.349893
 caqc0672,Saint-Thomas-D'Aquin,QC,45.649513,-72.994248
-caqc0673,Saint-TimothÃ©e,QC,45.29,-74.0411111
+caqc0673,Saint-Timothée,QC,45.29,-74.0411111
 caqc0674,Saint-Tite,QC,46.732843,-72.564978
 caqc0675,Saint-Tite-Des-Caps,QC,47.137073,-70.773585
 caqc0676,Saint-Ubalde,QC,46.756321,-72.27251
 caqc0677,Saint-Ulric,QC,48.786938,-67.701976
 caqc0678,Saint-Urbain,QC,47.557124,-70.538822
 caqc1264,Saint-Urbain-Premier,QC,45.21957,-73.7374169
-caqc1265,Saint-ValÃ¨re,QC,46.06443,-72.095648
-caqc1026,Saint-ValÃ©rien,QC,48.338789,-68.664668
+caqc1265,Saint-Valère,QC,46.06443,-72.095648
+caqc1026,Saint-Valérien,QC,48.338789,-68.664668
 caqc0679,Saint-Victor,QC,46.1470569,-70.906059
 caqc0529,Saint-Vincent-De-Paul,QC,45.622968,-73.651612
 caqc1589,Saint-Vital-De-Clermont,QC,48.9166669,-79.25
 caqc0680,Saint-Wenceslas,QC,46.16549,-72.324522
 caqc0681,Saint-Zacharie,QC,46.126157,-70.363883
-caqc0682,Saint-ZÃ©non,QC,46.558758,-73.814791
-caqc0683,Saint-ZÃ©phirin,QC,46.055534,-72.620536
+caqc0682,Saint-Zénon,QC,46.558758,-73.814791
+caqc0683,Saint-Zéphirin,QC,46.055534,-72.620536
 caqc0684,Saint-Zotique,QC,45.239375,-74.265331
-caqc0696,Sainte-AdÃ¨le,QC,45.9516667,-74.1347222
+caqc0696,Sainte-Adèle,QC,45.9516667,-74.1347222
 caqc0697,Sainte-Agathe,QC,46.383986,-71.409516
 caqc0698,Sainte-Agathe-Des-Monts,QC,46.049011,-74.279907
-caqc1266,Sainte-AngÃ¨le-De-Monnoir,QC,45.390371,-73.10836
-caqc0700,Sainte-Anne-De-BeauprÃ©,QC,47.030731,-70.928673
+caqc1266,Sainte-Angèle-De-Monnoir,QC,45.390371,-73.10836
+caqc0700,Sainte-Anne-De-Beaupré,QC,47.030731,-70.928673
 caqc0701,Sainte-Anne-De-Bellevue,QC,45.404426,-73.950007
-caqc0702,Sainte-Anne-De-La-PÃ©rade,QC,46.5720839,-72.204901
+caqc0702,Sainte-Anne-De-La-Pérade,QC,46.5720839,-72.204901
 caqc0703,Sainte-Anne-De-Portneuf,QC,48.615919,-69.101488
 caqc1267,Sainte-Anne-De-Sorel,QC,46.055614,-73.065573
 caqc0704,Sainte-Anne-Des-Monts,QC,49.126333,-66.484114
@@ -2745,26 +2734,26 @@ caqc1268,Sainte-Brigide-D'Iberville,QC,45.323814,-73.06584
 caqc0708,Sainte-Brigitte-De-Laval,QC,47.002378,-71.1942119
 caqc0709,Sainte-Catherine,QC,45.4,-73.5833333
 caqc1116,Sainte-Catherine-De-La-Jacques-Cartier,QC,46.85,-71.6166667
-caqc0688,Sainte-CÃ©cile-De-Masham,QC,45.6444059,-76.0139389
-caqc1269,Sainte-CÃ©cile-De-Milton,QC,45.483043,-72.744272
+caqc0688,Sainte-Cécile-De-Masham,QC,45.6444059,-76.0139389
+caqc1269,Sainte-Cécile-De-Milton,QC,45.483043,-72.744272
 caqc0689,Sainte-Claire,QC,46.601095,-70.864737
 caqc0710,Sainte-Clotilde-De-Horton,QC,45.989287,-72.237271
 caqc0690,Sainte-Croix,QC,46.623652,-71.73338
-caqc1270,Sainte-DorothÃ©e,QC,45.53075,-73.815398
+caqc1270,Sainte-Dorothée,QC,45.53075,-73.815398
 caqc0712,Sainte-Eulalie,QC,46.111885,-72.2492
 caqc1271,Sainte-Famille,QC,46.972965,-70.962875
-caqc0713,Sainte-FÃ©licitÃ©,QC,48.89932,-67.3358499
+caqc0713,Sainte-Félicité,QC,48.89932,-67.3358499
 caqc1396,Sainte-Flavie,QC,48.610881,-68.230284
 caqc0714,Sainte-Foy,QC,46.7833333,-71.3
-caqc0715,Sainte-GeneviÃ¨ve,QC,45.4850278,-73.8648056
-caqc1503,Sainte-Germaine-BoulÃ©,QC,48.602319,-79.115188
+caqc0715,Sainte-Geneviève,QC,45.4850278,-73.8648056
+caqc1503,Sainte-Germaine-Boulé,QC,48.602319,-79.115188
 caqc0691,Sainte-Gertrude,QC,48.51798,-78.309162
-caqc0716,Sainte-HÃ©lÃ¨ne-De-Bagot,QC,45.731667,-72.736272
-caqc1608,Sainte-HÃ©lÃ¨ne-De-Mancebourg,QC,48.748645,-79.298604
-caqc0717,Sainte-HÃ©nÃ©dine,QC,46.5585,-70.983934
+caqc0716,Sainte-Hélène-De-Bagot,QC,45.731667,-72.736272
+caqc1608,Sainte-Hélène-De-Mancebourg,QC,48.748645,-79.298604
+caqc0717,Sainte-Hénédine,QC,46.5585,-70.983934
 caqc0718,Sainte-Jeanne-D'Arc,QC,48.864858,-72.080491
 caqc0719,Sainte-Julie,QC,45.597705,-73.316944
-caqc0720,Sainte-Julie-De-VerchÃ¨res,QC,45.580445,-73.327142
+caqc0720,Sainte-Julie-De-Verchères,QC,45.580445,-73.327142
 caqc0721,Sainte-Julienne,QC,45.961652,-73.710857
 caqc0722,Sainte-Justine,QC,46.410578,-70.3485929
 caqc0692,Sainte-Justine-De-Newton,QC,45.374864,-74.411824
@@ -2773,23 +2762,23 @@ caqc0724,Sainte-Madeleine,QC,45.595281,-73.095677
 caqc0725,Sainte-Marguerite,QC,46.032143,-74.058528
 caqc0726,Sainte-Marie,QC,46.4383399,-71.021326
 caqc0727,Sainte-Marie-De-Blandford,QC,46.32412,-72.179575
-caqc1272,Sainte-Marie-SalomÃ©,QC,45.931627,-73.497253
+caqc1272,Sainte-Marie-Salomé,QC,45.931627,-73.497253
 caqc0728,Sainte-Marthe,QC,45.4058009,-74.297046
 caqc1273,Sainte-Marthe-Du-Cap,QC,46.3873589,-72.476577
 caqc0729,Sainte-Marthe-Sur-Le-Lac,QC,45.5333333,-73.9333333
 caqc0693,Sainte-Martine,QC,45.253266,-73.797715
 caqc0695,Sainte-Monique,QC,46.156682,-72.538431
-caqc0730,Sainte-PerpÃ©tue,QC,47.05732,-69.926801
-caqc0731,Sainte-PÃ©tronille,QC,46.85,-71.1333333
+caqc0730,Sainte-Perpétue,QC,47.05732,-69.926801
+caqc0731,Sainte-Pétronille,QC,46.85,-71.1333333
 caqc0732,Sainte-Rosalie,QC,45.6430556,-72.9
 caqc0733,Sainte-Rose,QC,48.6666669,-78.983333
 caqc0734,Sainte-Rose-De-Watford,QC,46.317938,-70.430354
 caqc0735,Sainte-Rose-Du-Nord,QC,48.38777,-70.587197
 caqc1274,Sainte-Sophie,QC,45.819874,-73.899902
-caqc0736,Sainte-Sophie-De-LÃ©vrard,QC,46.428256,-72.109857
-caqc0737,Sainte-ThÃ¨cle,QC,46.813268,-72.50686
-caqc1278,Sainte-ThÃ©rÃ¨se,QC,45.637909,-73.833023
-caqc0739,Sainte-VÃ©ronique,QC,46.512512,-74.989858
+caqc0736,Sainte-Sophie-De-Lévrard,QC,46.428256,-72.109857
+caqc0737,Sainte-Thècle,QC,46.813268,-72.50686
+caqc1278,Sainte-Thérèse,QC,45.637909,-73.833023
+caqc0739,Sainte-Véronique,QC,46.512512,-74.989858
 caqc0740,Sainte-Victoire,QC,45.950061,-73.083384
 caqc1279,Sainte-Victoire-De-Sorel,QC,45.948851,-73.088672
 caqc0474,Salaberry-De-Valleyfield,QC,45.25,-74.1333333
@@ -2803,7 +2792,7 @@ caqc0481,Scotstown,QC,45.52544,-71.275658
 caqc0800,Secteur-Charlevoix,QC,48.1666669,-71.066667
 caqc0482,Senneterre,QC,48.3333333,-76.4166667
 caqc0483,Senneville,QC,45.4333333,-73.9666667
-caqc0484,Sept-ÃŽles,QC,50.2,-66.3833333
+caqc0484,Sept-Îles,QC,50.2,-66.3833333
 caqc0485,Shawbridge,QC,45.875457,-74.082091
 caqc0486,Shawinigan,QC,46.55,-72.7333333
 caqc0487,Shawinigan-Sud,QC,46.517133,-72.744164
@@ -2825,22 +2814,22 @@ caqc0745,Sutton,QC,45.105422,-72.6150679
 caqc0746,Tadoussac,QC,48.156342,-69.714693
 caqc0747,Taschereau,QC,48.662783,-78.681241
 caqc0748,Tasiujaq,QC,58.6954556,-69.9277194
-caqc0749,TÃ©miscaming,QC,46.7166667,-79.0833333
+caqc0749,Témiscaming,QC,46.7166667,-79.0833333
 caqc1280,Terrasse-Vaudreuil,QC,45.388945,-73.992248
 caqc0750,Terrebonne,QC,45.716099,-73.660645
-caqc0751,TÃªte-Ã€-La-Baleine,QC,50.702463,-59.322257
+caqc0751,Tête-À-La-Baleine,QC,50.702463,-59.322257
 caqc0752,Thetford Mines,QC,46.089028,-71.301987
 caqc0753,Thurso,QC,45.596963,-75.243472
 caqc0754,Tingwick,QC,45.88116,-71.943945
 caqc1399,Tourville,QC,47.095581,-69.986288
 caqc0757,Tring-Jonction,QC,46.266672,-70.983338
 caqc0758,Trois-Pistoles,QC,48.122841,-69.174345
-caqc0759,Trois-RiviÃ¨res,QC,46.354519,-72.58215
+caqc0759,Trois-Rivières,QC,46.354519,-72.58215
 caqc0760,Umiujaq,QC,56.551953,-76.515001
 caqc0761,Upton,QC,45.649223,-72.694242
 caqc0763,Val-Alain,QC,46.415086,-71.752811
 caqc0764,Val-Barrette,QC,46.509326,-75.354207
-caqc0765,Val-BÃ©lair,QC,46.854838,-71.425871
+caqc0765,Val-Bélair,QC,46.854838,-71.425871
 caqc0766,Val-Brillant,QC,48.531408,-67.548003
 caqc0768,Val-David,QC,46.032243,-74.210241
 caqc0769,Val-Des-Bois,QC,45.915171,-75.5986439
@@ -2850,14 +2839,14 @@ caqc1622,Val-Saint-Gilles,QC,48.9809179,-79.1182265
 caqc1506,Val-Senneville,QC,48.209005,-77.655257
 caqc0804,Valcartier-Village,QC,46.9357789,-71.4677899
 caqc0770,Valcourt,QC,45.492475,-72.314925
-caqc0771,VallÃ©e-Jonction,QC,46.376822,-70.924873
+caqc0771,Vallée-Jonction,QC,46.376822,-70.924873
 caqc0772,Vanier,QC,46.8203611,-71.2665278
 caqc0773,Varennes,QC,45.678028,-73.418491
 caqc1507,Vassan,QC,48.2291079,-77.933061
 caqc1281,Vaudreuil-Dorion,QC,45.383,-74.017
 caqc0775,Vaudreuil-Sur-Le-Lac,QC,45.4166667,-74.0333333
-caqc0776,Venise-En-QuÃ©bec,QC,45.081684,-73.1266459
-caqc0777,VerchÃ¨res,QC,45.773338,-73.3527469
+caqc0776,Venise-En-Québec,QC,45.081684,-73.1266459
+caqc0777,Verchères,QC,45.773338,-73.3527469
 caqc0778,Verdun,QC,45.45,-73.5666667
 caqc0779,Victoriaville,QC,46.058159,-71.964523
 caqc0781,Ville-Marie,QC,47.331372,-79.441082
@@ -3014,7 +3003,7 @@ cask0130,Hodgeville,SK,50.110138,-106.959109
 cask0131,Holdfast,SK,50.958911,-105.42256
 cask0132,Hudson Bay,SK,52.85457,-102.383936
 cask0133,Humboldt,SK,52.2019444,-105.1230556
-cask0134,ÃŽle-Ã€-La-Crosse,SK,55.453398,-107.913801
+cask0134,Île-À-La-Crosse,SK,55.453398,-107.913801
 cask0135,Imperial,SK,51.344386,-105.439362
 cask0136,Indian Head,SK,50.5333333,-103.6666667
 cask0137,Invermay,SK,51.806049,-103.156303
